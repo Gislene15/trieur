@@ -44,14 +44,14 @@ void setup()
   // Initialise l'écran LCD
   Wire1.setPins(15, 5);
   lcd.begin(16, 2, LCD_5x8DOTS, Wire1);
-  // lcd.printf("Gigi la GOAT");
+   lcd.printf("Gigi la GOAT");
   // changer couleur sur le LCD
   lcd.setColor(2);
 
   // configuration des boutons
   pinMode(BP0, INPUT_PULLUP);
   pinMode(BP1, INPUT_PULLUP);
-  pinMode(BP2, INPUT_PULLUP);
+  pinMode(BP2, INPUT_PULLUP);                     
 
   // configuration en sortie de la pin sgn qui permet de la mettre en non horaire
   pinMode(non_horraire, OUTPUT);
